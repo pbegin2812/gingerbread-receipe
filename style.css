@@ -1,21 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
 }
 
 header {
-	height: 20vh;
+	height: 50vh;
 	width: 100%;
 	background-image: url(assets/bgbase.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 header > div {
 	height: 100%;
 	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-image: url(assets/vague.svg);
 	background-size: contain;
 	background-position: bottom;
 	background-repeat: no-repeat;
+}
+
+header > div > div {
+	height: 100%;
+	width: 50%;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 1fr;
@@ -23,15 +36,69 @@ header > div {
 	justify-items: center;
 }
 
-header > div > div {
-	height: 50%;
+header > div > div > div {
+	height: 30%;
 	aspect-ratio: 1/1;
 	border-radius: 15px;
 	background-size: cover;
 	background-position: bottom;
 	background-repeat: no-repeat;
+	box-shadow: 0px 20px 25px 0px #0000001a;
+	box-shadow: 0px 8px 10px 0px #0000001a;
 }
 
-header > div > div:nth-child(1) {
+header > div > div > div:nth-child(1) {
 	background-image: url(assets/paindepice.png);
+}
+
+header > div > div > div:nth-child(2) {
+	background-image: url(assets/paidepicevanille.jpg);
+}
+
+header > div > div > div:nth-child(3) {
+	background-image: url(assets/paindepiceorange.jpg);
+}
+
+header > div > div > div:nth-child(4) {
+	background-image: url(assets/citroningembre.png);
+}
+
+section.title {
+	padding: 30px;
+	background: #fdf0e5;
+}
+
+h1 {
+	font-family: Playfair Display;
+	font-weight: 700;
+	font-style: Bold;
+	font-size: 48px;
+	leading-trim: NONE;
+	line-height: 48px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: #502b0f;
+}
+
+section.title > p {
+	font-family: Poppins;
+	font-weight: 400;
+	font-style: Regular;
+	font-size: 20px;
+	leading-trim: NONE;
+	line-height: 28px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+.element {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.element > div {
+    
 }
